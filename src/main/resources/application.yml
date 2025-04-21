@@ -37,23 +37,6 @@ spring:
     open-in-view: false
     show_sql: true
 
-  # NoSQL
-  data:
-    # MongoDB
-    mongodb:
-      host: ${MONGODB_HOST}
-      port: ${MONGODB_PORT}
-      username: ${MONGODB_USERNAME}
-      password: ${MONGODB_PASSWORD}
-      database: category-mongodb
-    # Redis
-    redis:
-      host: ${REDIS_HOST}
-      port: ${REDIS_PORT}
-      password: ${REDIS_PASSWORD}
-      database: 0
-      timeout: 6000ms
-
   # RDBMS
   datasource:
     # MySQL
@@ -106,8 +89,3 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://eureka:8761/eureka
-
-minio:
-  url: https://s3.nansan.site
-  access-key: ${MINIO_ACCESS_KEY}
-  secret-key: ${MINIO_SECRET_KEY}
