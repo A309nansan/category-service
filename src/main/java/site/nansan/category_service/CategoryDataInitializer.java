@@ -121,7 +121,7 @@ public class CategoryDataInitializer implements CommandLineRunner {
         // ----- EN Level 1, Subject 1의 하위 카테고리 -----
         Category enlv1s1c1 = Category.builder()
                 .name("숫자 이름 알기")
-                .problemCode("enlv1s1c1jy1")
+                .problemCode("enlv1s1c1gn1")
                 .imagePath(EN_BASE_URL + "1/1/1.webp")
                 .description("1부터 9까지를 읽을 수 있어요.")
                 .level(3)
